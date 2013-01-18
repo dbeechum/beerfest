@@ -1,0 +1,85 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @beer.id %>
+</p>
+
+<p>
+  <b>Fest order:</b>
+  <%= @beer.fest_order %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @beer.name %>
+</p>
+
+<p>
+  <b>Style:</b>
+  <%= @beer.style %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%= @beer.year %>
+</p>
+
+<p>
+  <b>Abv:</b>
+  <%= @beer.abv %>
+</p>
+
+<p>
+  <b>Ibu:</b>
+  <%= @beer.ibu %>
+</p>
+
+<p>
+  <b>Srm:</b>
+  <%= @beer.srm %>
+</p>
+
+<p>
+  <b>Available:</b>
+  <%= @beer.available %>
+</p>
+
+<p>
+  <b>Tapped at time:</b>
+  <%= @beer.tapped_at_time %>
+</p>
+
+<p>
+  <b>Blown at time:</b>
+  <%= @beer.blown_at_time %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @beer.description %>
+</p>
+
+<p>
+  <b>Beer url:</b>
+  <%= @beer.beer_url %>
+</p>
+
+<p>
+  <b>Avg rating:</b>
+  <%= @beer.avg_rating %>
+</p>
+
+<p>
+  <b>Tried:</b>
+  <%= @beer.tried %>
+</p>
+
+<p>
+  <b>Festival:</b>
+  <%= @beer.festival %>
+</p>
+
+
+<%= link_to 'Edit', edit_beer_path(@beer) %> |
+<%= link_to 'Back', beers_path %>

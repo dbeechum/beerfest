@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  fest_order: 1
+  name: MyString
+  style: MyString
+  year: MyString
+  abv: 9.99
+  ibu: 9.99
+  srm: 9.99
+  available: false
+  tapped_at_time: 2013-01-18 00:38:02
+  blown_at_time: 2013-01-18 00:38:02
+  description: MyString
+  beer_url: MyString
+  avg_rating: 9.99
+  tried: 1
+  festival: 
+
+two:
+  id: 1
+  fest_order: 1
+  name: MyString
+  style: MyString
+  year: MyString
+  abv: 9.99
+  ibu: 9.99
+  srm: 9.99
+  available: false
+  tapped_at_time: 2013-01-18 00:38:02
+  blown_at_time: 2013-01-18 00:38:02
+  description: MyString
+  beer_url: MyString
+  avg_rating: 9.99
+  tried: 1
+  festival: 

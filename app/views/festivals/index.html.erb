@@ -1,0 +1,31 @@
+<h1>Beer Festivals!</h1>
+
+<table class="nav">
+<% @festivals.each do |festival| %>
+  <tr>
+    <td>
+	<% if !(festival.banner_url.nil?||festival.banner_url.empty?)%>
+		<%= link_to(image_tag(festival.banner_url, :border=>0), festival )%>
+	<% end %>
+	<td><%= link_to festival.name, festival %></td>
+    <td><%= festival.start_date %></td>
+    <td><%= festival.end_date %></td>
+    <td>
+	<% if !(festival.fesitval_url.nil?||festival.fesitval_url.empty?)%>
+	<%= link_to "Fest Site", festival.fesitval_url %>
+	<% end %>
+	</td>
+	<td>
+	<% if !(festival.tickets_url.nil?||festival.tickets_url.empty?)%>
+	<%= link_to "Tickets", festival.tickets_url %>
+	<% end %>
+	</td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<% if logged_in? %>
+<%= link_to 'New Festival', new_festival_path %>
+<% end %>

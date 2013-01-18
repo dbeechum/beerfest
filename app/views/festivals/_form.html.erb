@@ -1,0 +1,61 @@
+<%= form_for(@festival) do |f| %>
+  <% if @festival.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@festival.errors.count, "error") %> prohibited this festival from being saved:</h2>
+
+      <ul>
+      <% @festival.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.number_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br />
+    <%= f.date_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br />
+    <%= f.date_select :end_date %>
+  </div>
+  <div class="field">
+    <%= f.label :key %><br />
+    <%= f.text_field :key %>
+  </div>
+  <div class="field">
+    <%= f.label :fesitval_url %><br />
+    <%= f.text_field :fesitval_url %>
+  </div>
+  <div class="field">
+    <%= f.label :tickets_url %><br />
+    <%= f.text_field :tickets_url %>
+  </div>
+  <div class="field">
+    <%= f.label :cause_url %><br />
+    <%= f.text_field :cause_url %>
+  </div>
+  <div class="field">
+    <%= f.label :banner_url %><br />
+    <%= f.text_field :banner_url %>
+  </div>
+  <div class="field">
+    <%= f.label :link_social %><br />
+    <%= f.check_box :link_social %>
+  </div>
+  <div class="field">
+    <%= f.label :link_ratings %><br />
+    <%= f.check_box :link_ratings %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

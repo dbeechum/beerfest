@@ -11,3 +11,229 @@
  *= require_self
  *= require_tree .
 */
+
+body {
+background: #492b0f;
+color:#EEEEEE;
+font-family: "Arial", sans-serif;
+font-size:0.8125em;
+line-height:1.1;
+text-align: center;
+margin-top: 120px;
+}
+strong{
+font-weight:bold;
+}
+.nav{
+background-color: #f2e9dd;
+width: 100%;
+margin: 0px auto;
+overflow: auto;
+list-style: none;
+}
+.nav li{
+font-size:22px;
+background-color: #f2e9dd;
+width: 100%;
+padding-bottom: 30px;
+text-align: left;
+border-top: 1px solid #e4e3e6;
+border-bottom: 1px solid #4f4e4f;
+overflow: hidden;
+}
+
+.nav tr {
+font-size:22px;
+background-color: #f2e9dd;
+width: 100%;
+text-align: left;
+border-top: 1px solid #e4e3e6;
+border-bottom: 1px solid #4f4e4f;
+overflow: hidden;
+}
+
+.nav td {
+font-size:22px;
+color:#44240c;
+background-color: #f2e9dd;
+overflow: hidden;
+}
+
+.nav a{
+display: block;
+color:#55240c;
+}
+.smallital{
+	display: block;
+	font-size: 65%;
+	font-style:italic;
+}
+
+h1{
+text-align: left;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 1.8em;
+#margin: -6px 0 Not needed for regular web; 
+padding-left: 20px;
+}
+h2{
+	font-size: 1.6em;
+	text-align: left;
+	font-weight: bold;
+}
+.socials{
+font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+font-size: 70%;
+text-transform: uppercase;
+letter-spacing: 5px;
+display: block;
+}
+.beerbox{
+width: 96%;
+margin: 0px auto;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 1.2em;
+color: #000;
+margin: 20px 0 0px;
+text-align: justify;
+border-right: 2px solid #96591e;
+border-bottom: 2px solid #96591e;;
+border-top: 2px solid #3f250c;
+border-left: 2px solid black;
+background: #faf1e2;
+}
+.beerbox p{
+color: black;
+padding: 12px;
+margin-left: -6px;
+}
+.rightarrows{
+	float: right;
+	position: relative;
+	top: 1em;
+}
+.beerdesc{
+margin: 0;
+padding: 0 12px 10px;
+background-color: #f2e9dd;
+}
+.beerstats{
+width: 105%;
+margin: 0;
+margin-left: -10px;
+padding: 6px 0;
+border-bottom: 1px solid #3f250c;
+border-top: 1px solid #3f250c;
+}
+.beerstat{
+	display: inline-block;
+	width: 32%;
+	text-align: center;
+}
+.beername, .beerstyle, .brewery, .from {
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	display: block;
+	line-height: 1.2;
+}
+.beername{
+	font-weight: bold;
+}
+.brewery{
+	font-style: italic;
+}
+.from{
+	font-size: 85%;
+}
+.halfcentered {
+	display: inline-block;
+	width: 48%;
+	text-align: center;
+	padding-bottom: 6px;
+}
+.halfcentered a{
+	padding: 10px;
+}
+.tasted{
+	padding: 10px 0 10px 10px;
+	float: right;
+}
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 240px;
+	position: relative;
+	margin: 30% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #ddd;
+	background: -moz-linear-gradient(#ddd, #555);
+	background: -webkit-linear-gradient(#ddd, #555);
+	background: -o-linear-gradient(#ddd, #555);
+}
+.modalDialog a{
+	display: block;
+	padding: 10px 0;
+	font-size: 20pt;
+	text-align: center;
+	text-shadow: 1px 1px 0px #000;
+}
+.modalDialog a:hover{
+	background-color: #005;
+}
+/********** Link Styles *********/
+
+a {
+text-decoration:none;
+}
+a{
+color: #ffffff;
+}
+a:hover, a:link, a:active{
+border-color:#ea2f34;
+}
+
+/********* Header *********/
+
+#header{
+height:120px;
+width: 100%;
+background: #492b0f;
+margin: 0px;
+position: fixed;
+top: 0;
+z-index: 9;
+overflow: hidden;
+}
+#header a{
+	position: absolute;
+	left: 0;
+}
+/********* Footer *********/
+
+#footer {
+width: 100%;
+margin:2px 0 4px 0;
+color: #fff;
+text-align: center;
+font: 0.9em/14px Georgia, "Times New Roman", Times, serif;
+opacity: 0.6;
+}
+
+#footer .copyright {
+padding-left:0px;
+}

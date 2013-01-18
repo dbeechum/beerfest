@@ -1,0 +1,62 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @festival.id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @festival.name %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%= @festival.start_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%= @festival.end_date %>
+</p>
+
+<p>
+  <b>Key:</b>
+  <%= @festival.key %>
+</p>
+
+<p>
+  <b>Fesitval url:</b>
+  <%= @festival.fesitval_url %>
+</p>
+
+<p>
+  <b>Tickets url:</b>
+  <%= @festival.tickets_url %>
+</p>
+
+<p>
+  <b>Cause url:</b>
+  <%= @festival.cause_url %>
+</p>
+
+<p>
+  <b>Banner url:</b>
+  <%= @festival.banner_url %>
+</p>
+
+<p>
+  <b>Link social:</b>
+  <%= @festival.link_social %>
+</p>
+
+<p>
+  <b>Link ratings:</b>
+  <%= @festival.link_ratings %>
+</p>
+
+<% if logged_in? %>	
+    <td><%= link_to 'Edit', edit_festival_path(@festival) %></td>
+    <td><%= link_to 'Destroy', @festival, confirm: 'Are you sure?', method: :delete %></td>
+<% end %>
+<%= link_to 'Back', festivals_path %>
